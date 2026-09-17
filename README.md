@@ -287,8 +287,6 @@ sequenceDiagram
 
 ## How I used AI
 
-I used an AI assistant (Claude) as a pair programmer and reviewer. I asked it to explain its reasoning and compare alternatives before accepting a suggestion. Some of the decisions I made along the way:
-
 - **Tooling:** I started in Android Studio's *New Project* wizard, asked why it didn't fit a React Native task, and chose Expo + VS Code, keeping Android Studio only for the SDK.
 - **Dev loop:** I rejected running an emulator (RAM limits) and an APK build per change (slow). I chose Expo Go on my phone for instant reloads, with one EAS-built APK at the end.
 - **Architecture:** I asked for the API, state and UI layers to be separate, and had the assistant explain the discriminated-union state, request cancellation and `Promise.all` before using them.
